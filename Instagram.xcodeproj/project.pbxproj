@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DCB3CB312610BEA200065BCE /* Const.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCB3CB302610BEA200065BCE /* Const.swift */; };
 		DCBFC20426108EE1001C2490 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFC20326108EE1001C2490 /* AppDelegate.swift */; };
 		DCBFC20626108EE1001C2490 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFC20526108EE1001C2490 /* SceneDelegate.swift */; };
 		DCBFC20B26108EE1001C2490 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCBFC20926108EE1001C2490 /* Main.storyboard */; };
@@ -24,6 +25,7 @@
 
 /* Begin PBXFileReference section */
 		22A66C764A1FD7B6747EB1B3 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCB3CB302610BEA200065BCE /* Const.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Const.swift; sourceTree = "<group>"; };
 		DCBFC20026108EE1001C2490 /* Instagram.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Instagram.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBFC20326108EE1001C2490 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DCBFC20526108EE1001C2490 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,7 +70,6 @@
 				E6851DD9ED52A0DECF53CEB7 /* Pods-Instagram.debug.xcconfig */,
 				E835E678038F05FE1AAB9F66 /* Pods-Instagram.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -101,6 +102,7 @@
 				DCBFC22026108FF9001C2490 /* ImageSelectViewController.swift */,
 				DCBFC22326109010001C2490 /* PostViewController.swift */,
 				DCBFC22626109026001C2490 /* SettingViewController.swift */,
+				DCB3CB302610BEA200065BCE /* Const.swift */,
 				DCBFC20926108EE1001C2490 /* Main.storyboard */,
 				DCBFC20C26108EE2001C2490 /* Assets.xcassets */,
 				DCBFC20E26108EE2001C2490 /* LaunchScreen.storyboard */,
@@ -233,6 +235,7 @@
 				DCBFC21B26108FC7001C2490 /* LoginViewController.swift in Sources */,
 				DCBFC20426108EE1001C2490 /* AppDelegate.swift in Sources */,
 				DCBFC20626108EE1001C2490 /* SceneDelegate.swift in Sources */,
+				DCB3CB312610BEA200065BCE /* Const.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
