@@ -142,6 +142,64 @@
             </objects>
             <point key="canvasLocation" x="-530" y="640"/>
         </scene>
+        <!--Comment View Controller-->
+        <scene sceneID="UUQ-WV-P9y">
+            <objects>
+                <viewController storyboardIdentifier="CommentView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="4Pk-CC-pkg" customClass="CommentViewController" customModule="Instagram" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gbc-38-Wz6">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="obD-jV-NTW">
+                                <rect key="frame" x="10" y="343" width="300" height="40"/>
+                                <state key="normal" title="コメント投稿" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="commentButton:" destination="4Pk-CC-pkg" eventType="touchUpInside" id="Csq-ZV-OlB"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H8W-C7-VUI">
+                                <rect key="frame" x="10" y="393" width="300" height="40"/>
+                                <state key="normal" title="キャンセル" backgroundImage="btn"/>
+                                <connections>
+                                    <action selector="commentCanselButton:" destination="4Pk-CC-pkg" eventType="touchUpInside" id="kEs-6v-8hw"/>
+                                </connections>
+                            </button>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="QdC-XQ-FeF">
+                                <rect key="frame" x="10" y="124" width="300" height="209"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="120" id="FcW-Nx-Euj"/>
+                                    <constraint firstAttribute="width" constant="120" id="sAl-vy-Im7"/>
+                                </constraints>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="p0m-9j-eg9"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="QdC-XQ-FeF" firstAttribute="top" secondItem="p0m-9j-eg9" secondAttribute="top" constant="80" id="014-R4-m1i"/>
+                            <constraint firstItem="p0m-9j-eg9" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="obD-jV-NTW" secondAttribute="trailing" id="3tl-hO-p3Z"/>
+                            <constraint firstItem="obD-jV-NTW" firstAttribute="top" secondItem="Gbc-38-Wz6" secondAttribute="top" constant="343" id="62J-ed-awI"/>
+                            <constraint firstItem="p0m-9j-eg9" firstAttribute="trailing" secondItem="QdC-XQ-FeF" secondAttribute="trailing" constant="10" id="BBx-Oj-nMB"/>
+                            <constraint firstItem="H8W-C7-VUI" firstAttribute="centerX" secondItem="Gbc-38-Wz6" secondAttribute="centerX" id="GTD-AH-DsV"/>
+                            <constraint firstItem="QdC-XQ-FeF" firstAttribute="leading" secondItem="p0m-9j-eg9" secondAttribute="leading" constant="10" id="cl2-bj-z7r"/>
+                            <constraint firstItem="QdC-XQ-FeF" firstAttribute="centerX" secondItem="Gbc-38-Wz6" secondAttribute="centerX" id="gEa-2B-iTY"/>
+                            <constraint firstItem="H8W-C7-VUI" firstAttribute="trailing" secondItem="Gbc-38-Wz6" secondAttribute="trailingMargin" constant="10" id="nfQ-1X-dfa"/>
+                            <constraint firstItem="obD-jV-NTW" firstAttribute="leading" secondItem="p0m-9j-eg9" secondAttribute="leading" constant="10" id="rIr-i7-V9e"/>
+                            <constraint firstItem="obD-jV-NTW" firstAttribute="top" secondItem="QdC-XQ-FeF" secondAttribute="bottom" constant="10" id="um1-FI-vY6"/>
+                            <constraint firstItem="H8W-C7-VUI" firstAttribute="top" secondItem="obD-jV-NTW" secondAttribute="bottom" constant="10" id="yUU-4G-mEX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="commentTextView" destination="QdC-XQ-FeF" id="dcy-qu-b06"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i54-IZ-X9E" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1762.3188405797102" y="1358.7053571428571"/>
+        </scene>
         <!--設定-->
         <scene sceneID="W8k-f2-bvt">
             <objects>
@@ -321,6 +379,9 @@
         <image name="camera" width="25" height="25"/>
         <image name="home" width="25" height="25"/>
         <image name="setting" width="25" height="25"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
